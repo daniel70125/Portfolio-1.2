@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Wright | Web developer</title>
+    <link rel="stylesheet" type="text/css" href="welcome.css" >
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <section class="welcome">
+        <div id="navbar">
+        <ul>
+            <li><a id="pj" href="#">Projects</a></li>
+            <li><a href="contactPage.html">Contact Me</a></li>
+        </ul>
+    </div>
+    <div id="projects">
+        <ul>
+            
+            <li><a href="php.html">Calculator</a></li>
+        </ul>
+    </div>
+        <video src="smoke.mp4" loop autoplay muted playsinline></video>
+        <h1>
+            <span>W</span>
+            <span>E</span>
+            <span>L</span>
+            <span>C</span>
+            <span>O</span>
+            <span>M</span>
+            <span>E</span>
+        </h1>
+    </section>
+    <section>
+        <div id="main">
+            <h2>Daniel Wright | Web developer</h2>
+            
+            </div>
+            <hr>
+            <div id="body">
+            <div id="bio">
+                <p>
+                    Fast learner, 'outside the box' thinking, and a good listener! These are the qualities that makes me a 
+                    good developer in the modern day age. Always striving to be the best in any situation i'm a great asset to any team!
+                </p>
+            </div>
+            <div id="info">
+                <h2 class="info">How Can I Help?</h2>
+                <p>A front-end developer's role is to combine design and business logic to achieve a user-facing product.
+                To do this successfully, a wide skill set is necessary to produce a quality user experience
+                that leads to meeting business goals. With my experience I can:
+                </p>
+                <br><br><br>
+                <ul>
+                    <li class="li">Create responsive websites that work on a wide range of devices</li>
+                    <li class="li">Assist with production of clean and functional design</li>
+                    <li class="li">Integrate your website into an easy to use content management system</li>
+                </ul>
+            </div>
+            <div id="languages">
+                <div class="languages">
+                    <div class="css"></div>
+                    <hr style="margin-top:20px">
+                    <p>With the latest power of CSS I can make any website go from plain and boring to <span style="margin:0px; filter: blur(1px); color:red">fun and vivid</span> with ease,
+                    from <span style="margin:0px; color:purple">changing text colors</span> to animations I can make any website attractive.
+                    </p>
+                </div>
+                <div class="languages">
+                    <div class="js"></div>
+                    <hr style="margin-top:20px">
+                    <p id="change">Using Javascript, I can make a website as functional as you need. From log-in forms to keeping data stored, I can make any site
+                    as dynamic as you want...
+                    </p>
+                    <button onclick=change(); id="jsbutton">Click Me!</button>
+                </div>
+                <div class="languages">
+                    <div class="html"></div>
+                    <hr style="margin-top:20px">
+                    <p>HTMl is the foundation of your website, with my experience I can make sure your site is well structured so that it's easier
+                    to change the whole site with ease and without confusion.
+                    </p>
+                </div>
+            </div>
+                <div>
+                    <h4>Languages</h4>
+                    <hr style="margin:40px auto">
+                </div>
+            </div>
+            <div class="skillbox">
+            <div id="skills">
+                <div><h3>HTML</h3></div>
+                <div><h3>CSS</h3></div>
+                <div style="width:85%"><h3>JavaScript</h3></div>
+                <div style="width:55%"><h3>SQL</h3></div>
+                <div style="width:60%"><h3>Bootstrap 4</h3></div>
+                <div style="width:65%"><h3>Angular</h3></div>
+                <div style="width:55%"><h3>PHP</h3></div>
+                <div style="width:75%"><h3>JQuery</h3></div>
+                
+            </div>
+            <div id="">
+                <h3 id="Apple "></h3>
+            </div>
+            </div> <!-- Body div -->
+            
+                                            <!-- Footer Copyright-->
+            <div id="footer">
+        
+    <footer>
+         <p style="margin:0px">© D.Wright 2019 all rights reserved.</p>
+         <p style="margin-bottom:5px; margin-top:5px; padding:0px">E-Mail:dwrighttt504@gmail.com</p>
+         
+         <p style="margin-top:0px; padding:0px">Cell:(504)236-8584</p>
+    </footer>
+    <script>
+        
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#pj").click(function(){
+                $("#projects").fadeIn("slow");
+                
+            });
+        });
+        function change() {
+            var btn = document.getElementById("change");
+            btn.innerHTML = "very DYNAMIC! Isn't javascript cool?";
+        }
+    </script>
+    </div>
+    </section>
+</body>
+</html>
