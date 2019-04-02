@@ -1,0 +1,168 @@
+* {box-sizing:border-box;}
+        body:hover {
+            background: black;
+        }
+        body {
+        margin:0px;
+        background: black;
+        }
+#footer {
+ color:white;
+ text-align:center;
+ height:100px;
+ font-size:20px;
+ margin-top: 50px;
+}
+#lightsOn, #lightsOff {
+    width:50%;
+    height:200px;
+    text-align:center;
+    display:inline;
+}
+#btndiv {
+    overflow: auto;
+}
+#lightsOn {float:left;}
+#lightsOff {float:right;}
+#lightsOff>button {margin-top:80px;}
+#lightsOn>button {margin-top:80px;}
+
+.btn1 {
+    background: darkgray;
+    border-radius:6% ;
+}
+.btn1:hover {
+    box-shadow: -5px 5px 10px red;
+    animation: mybtn 5s infinite;
+}
+@keyframes mybtn {
+    0% {
+        width:175px;
+        height:29px;
+    }
+    50% {
+        width:250px;
+        height:45px;
+    }
+    100% {
+        width:175px;
+        height:29px;
+    }
+}
+.btn2 {
+    background: darkgray;
+    border-radius:6% ;
+}
+.btn2:hover {
+    box-shadow: 5px 5px 10px blue;
+    animation: mybtn 5s infinite;
+}
+            .container {
+                border:3px solid black;
+                box-shadow: 2%;
+                margin:auto;
+                text-align:center;
+                width:50%;
+                box-sizing: border-box;
+                height:300px ;
+                padding:10px;
+                background: url('Pictures/math.jpg');
+                background-size: cover;
+                font-weight: bolder;
+                color:white;
+            }
+            select, button {font-size:20px;}
+            #answer {font-size: 46px;}
+            
+            #space {
+                background: url('Pictures/albertEinstein.jpg');
+                background-size: cover;
+                height:700px;
+                width:100%;
+                padding-top: 300px;
+                text-align: center;
+                color:white;
+                
+            }
+            #navbar {
+            height:50px;
+            width:80%;
+            text-align:center;
+            margin:auto;
+        }
+            a {
+                color:white;
+                text-decoration: none;
+            }
+            a:hover {color:red;}
+            ul {
+                list-style-type: none;
+                padding: 10px;
+                margin: 0px;
+                background: #0f0d48;
+                font-size: x-large;
+                
+            }
+            #onlights {
+                color:White;
+                width:25%;
+                float: left;
+                height: 300px;
+                display: inline-block;
+                
+            }
+            #offlights {
+                width:25%;
+                float:right;
+                padding:10px;
+                height:300px;
+                position:
+                absolute;right:
+                1px;top:
+                750px;
+            }
+            li {
+                display:inline;
+                margin-left:30px;
+                
+            }
+            #angular {
+                width:100%;
+            }
+            #p1 {
+                width:50%;
+                margin:auto;
+                height:200px;
+                color:red;
+            }
+            /* Media Queries For Mobile Devices */
+            
+            @media screen and (max-width :900px) {
+                .container {
+                    width:100%;
+                    height:auto;
+                    color:black;
+                }
+                #answer {
+                    color:white;
+                }
+                #space {
+                   display:none;
+                }
+                #p1 { 
+                    width:100%
+                }
+                #offlights, #onlights {
+                    display:none;
+                }
+                #answer {
+                    color:white;
+                }
+            }
+            
+            
+            
+            
+            
+            
+            
