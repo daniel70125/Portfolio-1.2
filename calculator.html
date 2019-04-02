@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JavaScript</title>
+        <!-- Angular Link below VERY IMPORTANT  -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="calculator.css"/>
+    </head>
+    <body ng-app="" ng-init="myCol=''" style="background-color:{{myCol}}">
+        <div id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </div>
+        <div id ="space">
+        </div>
+        <div id="onlights">
+            <p style="font-size:45px">
+                Can someone please turn on a light?!
+            </p>
+        </div>
+        <div class="container">
+            <h1>Hand-Coded JavaScript Calculator</h1>
+            <form>
+                First Number: <input id="num1" type="text"/> <br>
+                Second Number: <input id="num2" type="text"/> <br>
+                <button type="button" onclick="calc()">Calculate</button>
+                <select id="operator">
+                    <option value="add">Add</option>
+                    <option value="min">Subtract</option>
+                    <option value="div">Divide</option>
+                    <option value="mul">Multiply</option>
+                </select>
+                </form>
+            <div id="answer"> Answer will appear here </div>
+            </div>
+            <div id="offlights">
+                <p style="font-size:45px">
+                    Thank You! It was so dark in here...
+                </p>
+            </div>
+            <div id="btndiv">
+            <div id="lightsOn">
+            <button class="btn1" id="btn1" type="button" onclick="chbg1()">Turn on the lights!</button>
+            </div>
+            <div id="lightsOff">
+            <button class="btn2" id="btn2" type="button" onclick="chbg2()">Turn off the lights!</button>
+            </div>
+            </div>
+            <div id="angular">
+                <div id="p1">
+                    <h1 style="text-align:center">Angular Anyone??</h1>
+                    <h2>I Dont really like white or black! How about you pick the background color?!
+                    Type your color in right here <input placeholder="ENTER COLOR HERE" ng-model="myCol" /> and we should see a color change!</h2>
+                </div>
+            </div>
+            <div id="footer">
+            <footer>
+                 © D.Wright 2019 all rights reserved.
+            </footer>
+            </div>
+    
+        <script type="text/javascript">
+                function calc() {
+                 var a = Number(document.querySelector("#num1").value);
+            var b = Number(document.querySelector("#num2").value);
+            var sum = document.querySelector("#operator").value;
+            var calculate;
+                
+                if (sum == "add") {
+                calculate = a + b;
+            } else if (sum == "mul") {
+                calculate = a * b;
+            } else if (sum == "min") {
+                calculate = a - b;
+            } else if (sum == "div") {
+                calculate = a / b;
+            }
+            document.querySelector("#answer").innerHTML = calculate;
+            }
+            function chbg1() {
+                
+                document.body.style.backgroundColor = "white";
+                document.body.style.transition = "background-color 5s";
+            }
+            function chbg2() {
+                document.body.style.transition = "background-color 5s";
+                document.body.style.backgroundColor = "black";
+            }
+            </script>
+    </body>
+</html>
