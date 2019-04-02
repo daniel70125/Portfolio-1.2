@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Contact Me</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    body {
+        background-image: url("Pictures/image1.png");
+        color:white;
+    }
+        #container {
+            width:960px;
+            margin:0px auto;
+            margin-top: 70px;
+            
+        }
+        #container p {
+            font-size: 18px;
+        }
+        #left-column {
+            width:30%;
+            float:left;
+            background:;
+        }
+        #right-column {
+            width:70%;
+            float:left;
+            background:;
+        }
+        @media screen and (max-width:959px) {
+            #container {
+                width:100%;
+            }
+            #left-column {
+                width:70%;
+            }
+            #right-column {
+                width:30%;
+            }
+        }
+        @media screen and (max-width:659px) {
+            #left-column {
+                width:100%;
+            }
+            #right-column {
+                width:100%;
+            }
+            img {
+                height:300px;
+            }
+        }
+        footer {
+         color:white;
+         text-align:center;
+         height:100px;
+         font-size:20px;
+         margin-top:40px;
+        }
+        img {
+            width:100%;
+        }
+        label {
+            font-size: 20px;
+        }
+        .btn2 {
+            width:50%;
+        }
+        
+    input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;  
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box; 
+                margin-top: 6px; 
+                margin-bottom: 16px; 
+                resize:vertical;
+                background:#D3D3D3 ;
+            }
+            input[type="submit"] {
+                width:100%;
+            }
+            .sidenav {
+                height:100%;
+                width:0%;
+                position:fixed;
+                z-index:1;
+                top:0;
+                left:0;
+                background-color:black;
+                overflow-x:hidden;
+                padding-top:60px;
+                transition:3s;
+            }
+            .sidenav a  {
+                padding: 8px 8px 8px 32px;
+                text-decoration: none;
+                font-size: 25px;
+                color: #818181;
+                display: block;
+                transition: 0.3s;
+            }
+            .sidenav > button {
+                background: black;
+                border-color: black;
+                color:white;
+            }
+            .sidenav a:hover {
+              color: green;
+            }
+            .sidenav .closebtn {
+              position: absolute;
+              top: 0;
+              right: 25px;
+              font-size: 36px;
+              margin-left: 50px;
+            }
+            #main {
+              transition: margin-left .5s;
+              padding: 20px;
+            }
+            @media screen and (max-height: 450px) {
+              .sidenav {padding-top: 15px;}
+              .sidenav a {font-size: 18px;}
+            }
+            #homeBtn {
+                width:100%;
+            }
+            #sep {
+                clear:both;
+                content:"";
+            }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="left-column">
+            <img src="Pictures/blackLogo.png"/>
+            <p>Junior Web Developer having 2+ years of experience in web development.
+            Strong experience in development of web applications for using HTML, 
+            CSS, JavaScript, JQuery, and AngularJS. I can build a webpage from the
+            ground up with ease. Moderate knowledge and experience
+            with SQL Server and PHP is also in my toolbag in addition to knowledge of JavaScript 
+            MVC framework like AngularJS, CSS framework like Bootstrap. </p>
+        </div>
+        <aside id="right-column">
+            <form action="in.php" method="GET">
+                    <label for="rnameame">Name</label>
+                    <input type="text" placeholder="Name Goes Here..." name="rname"/>
+                    <label for="temail">Email</label>
+                    <input placeholder="Email Goes Here..." type="text" name="remail" />
+                    <label for="rnumber">Number</label>
+                    <input type="text" name="rnumber">
+                    <label for="rcomment">Subject</label>
+                    <textarea style="height:150px" name="rcomment" placeholder="Write your message here..."></textarea>
+                    <input class="btn2" type="submit" value="Signup">
+                </form>
+                <button class="btn2" onclick="openNav()" id="homeBtn" >Home Menu</button>
+        </aside>
+            <div id="mySidenav" class="sidenav">
+                <button href="" class="closebtn" onclick="closeNav()">&times;</button>
+                <a href="index.html">Home</a> 
+            </div>
+            <div id="main">
+                
+            </div>
+            <div id="sep">
+                
+            </div>
+            <footer>
+         © D.Wright 2019 all rights reserved.
+            </footer>
+        </div>
+        <script>
+            function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        /* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft = "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
+</body>
+</html>
