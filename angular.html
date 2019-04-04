@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta content="text/html; charset=utf-8" />
+        <title>Angular</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body>
+        
+        <div ng-app="box" ng-controller="cntrl">
+            <div>
+                {{message}}
+            </div>
+            <script>
+                var tap=angular.module("box", []);
+                var controll=tap.controller("cntrl", function($scope) {
+                    $scope.message="name";
+                    });
+            </script>
+        </div>
+    </body>
+</html>
