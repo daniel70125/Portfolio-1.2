@@ -69,7 +69,6 @@
                 background: url('Pictures/math.jpg');
                 background-size: cover;
                 font-weight: bolder;
-                color:white;
             }
             select, button {font-size:20px;}
             #answer {font-size: 46px;}
@@ -99,7 +98,6 @@
                 list-style-type: none;
                 padding: 10px;
                 margin: 0px;
-                background: #0f0d48;
                 font-size: x-large;
                 
             }
@@ -128,6 +126,7 @@
             }
             #angular {
                 width:100%;
+                text-align: center;
             }
             #p1 {
                 width:50%;
@@ -141,10 +140,10 @@
                 .container {
                     width:100%;
                     height:auto;
-                    color:black;
+                    color:orangered;
                 }
                 #answer {
-                    color:white;
+                    color:orangered;
                 }
                 #space {
                    display:none;
@@ -155,14 +154,4 @@
                 #offlights, #onlights {
                     display:none;
                 }
-                #answer {
-                    color:white;
-                }
             }
-            
-            
-            
-            
-            
-            
-            
